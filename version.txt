@@ -1,0 +1,5 @@
+caloriQ - Version History
+
+v1.0 - Initial project setup
+v1.1 - Added Git version tracking
+v1.2 - Implemented SCM version management
