@@ -1,0 +1,5 @@
+FitLedger - Version Control
+
+v1.0 - Initial project
+v1.1 - Added Git version tracking
+v1.2 - SCM implementation with commits and tags
