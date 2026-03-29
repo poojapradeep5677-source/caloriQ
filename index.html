@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitLedger - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="homePage">
+    <div class="top-nav">
+        <h2 style="color: var(--primary-dark); margin:0;">FitLedger 🌿</h2>
+        <button id="btn-signout" class="btn-signout">Sign Out</button>
+    </div>
+    
+    <div class="wrapper" style="padding-bottom: 90px;">
+        <h2 style="margin: 0;">Hi, <span id="userName"></span> 👋</h2>
+        
+        <div class="card" style="flex-direction: row; justify-content: space-around; padding: 15px 10px;">
+            <div style="text-align:center"><div class="stat-value" id="valBmi">-</div><div class="stat-name">BMI</div></div>
+            <div style="text-align:center"><div class="stat-value" id="valBmr">-</div><div class="stat-name">BMR</div></div>
+            <div style="text-align:center"><div class="stat-value" id="valGoal">-</div><div class="stat-name">Goal</div></div>
+        </div>
+
+        <div class="card">
+            <h3 class="card-title">🔥 Calories Section</h3>
+            <div class="stat-row"><span class="stat-name">Consumed</span><span class="stat-value" id="valConsumed">-</span></div>
+            <div class="stat-row"><span class="stat-name">Burned</span><span class="stat-value" id="valBurned">-</span></div>
+            <div class="stat-row"><span class="stat-name">Remaining</span><span class="stat-value" id="valRemaining" style="color: var(--primary);">-</span></div>
+        </div>
+
+        <div class="card">
+            <h3 class="card-title">💧 Water Tracker</h3>
+            <div id="waterAlert" class="alert"></div>
+            <div class="stat-row"><span class="stat-name">Glasses</span><span class="stat-value" id="valWaterConsumed">-</span></div>
+            <div class="stat-row"><span class="stat-name">Remaining</span><span class="stat-value" id="valWaterRem">-</span></div>
+            <button class="btn btn-secondary" id="btnAddWater">➕ Add Water</button>
+        </div>
+        
+        <div class="card">
+            <h3 class="card-title">🍽 Meal Summary</h3>
+            <div id="aiSuggestion" class="alert" style="margin:0;"></div>
+        </div>
+
+        <div class="card">
+            <h3 class="card-title">🏃 Activity Summary</h3>
+            <form id="formActivity" style="margin-top: 5px;">
+                <input type="text" id="actName" placeholder="Activity Name (e.g. Running)" required>
+                <input type="number" id="actDuration" placeholder="Duration (mins)" required>
+                <button type="submit" class="btn">Add Activity</button>
+            </form>
+        </div>
+
+        <div class="card">
+            <h3 class="card-title">🥑 Nutrition Summary</h3>
+            <div class="stat-row"><span class="stat-name">Protein</span><span class="stat-value" id="valProtein">-</span></div>
+            <div class="stat-row"><span class="stat-name">Carbs</span><span class="stat-value" id="valCarbs">-</span></div>
+            <div class="stat-row"><span class="stat-name">Fat</span><span class="stat-value" id="valFat">-</span></div>
+        </div>
+    </div>
+
+    <div class="bottom-bar">
+        <div class="nav-links">
+            <a href="index.html" class="nav-item"><span>🏠</span>Home</a>
+            <a href="meals.html" class="nav-item"><span>🍲</span>Meals</a>
+            <a href="summary.html" class="nav-item"><span>📊</span>Summary</a>
+            <a href="goals.html" class="nav-item"><span>🎯</span>Goals</a>
+            <a href="progress.html" class="nav-item"><span>📈</span>Progress</a>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

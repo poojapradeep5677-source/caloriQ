@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitLedger - Goals</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="goalsPage">
+    <div class="top-nav">
+        <h2 style="color: var(--primary-dark); margin:0;">FitLedger 🌿</h2>
+    </div>
+
+    <div class="wrapper" style="padding-bottom: 90px;">
+        <h2 style="margin: 0;">Goals & Weight 🎯</h2>
+
+        <div class="card" style="flex-direction: row; justify-content: space-around;">
+            <div style="text-align:center"><div class="stat-value" style="font-size:20px;" id="startWeight">0 kg</div><div class="stat-name">Start Weight</div></div>
+            <div style="text-align:center"><div class="stat-value" style="font-size:20px; color:var(--primary)" id="currWeight">0 kg</div><div class="stat-name">Current</div></div>
+        </div>
+
+        <div class="card">
+            <h3 class="card-title">Log Daily Weight</h3>
+            <form id="formWeight">
+                <div class="input-group">
+                    <input type="number" step="0.1" id="newWeight" placeholder="Enter today's weight (kg)" required>
+                </div>
+                <button type="submit" class="btn">Log Weight</button>
+            </form>
+        </div>
+
+        <div class="card">
+            <h3 class="card-title">Weight History</h3>
+            <div id="weightLog" style="display: flex; flex-direction: column; gap: 5px;"></div>
+        </div>
+    </div>
+
+    <div class="bottom-bar">
+        <div class="nav-links">
+            <a href="index.html" class="nav-item"><span>🏠</span>Home</a>
+            <a href="meals.html" class="nav-item"><span>🍲</span>Meals</a>
+            <a href="summary.html" class="nav-item"><span>📊</span>Summary</a>
+            <a href="goals.html" class="nav-item"><span>🎯</span>Goals</a>
+            <a href="progress.html" class="nav-item"><span>📈</span>Progress</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

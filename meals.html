@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitLedger - Meals</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="mealsPage">
+    <div class="top-nav">
+        <h2 style="color: var(--primary-dark); margin:0;">FitLedger 🌿</h2>
+    </div>
+
+    <div class="wrapper" style="padding-bottom: 90px;">
+        <h2 style="margin: 0;">Log Your Meals 🍽</h2>
+        
+        <div class="card">
+            <h3 class="card-title">🍳 Search Food</h3>
+            <div class="input-group">
+                <input type="text" id="foodSearch" placeholder="Type food name...">
+            </div>
+            <div style="display: flex; gap: 10px;">
+                <button class="btn btn-secondary" id="btnSearch" style="flex:1;">🔍 Search</button>
+                <button class="btn btn-secondary" id="btnAIUpload" style="flex:1;">📸 Upload Image</button>
+            </div>
+        </div>
+
+        <div id="detectedBox" class="card hidden">
+            <h3 class="card-title">Detected: <span id="detName"></span></h3>
+            <div class="stat-row"><span class="stat-name">Calories / 100g</span><span class="stat-value" id="detCal">-</span></div>
+            <div class="stat-row"><span class="stat-name">Protein</span><span class="stat-value" id="detProt">-</span></div>
+            <div class="stat-row"><span class="stat-name">Carbs</span><span class="stat-value" id="detCarb">-</span></div>
+            <div class="stat-row"><span class="stat-name">Fat</span><span class="stat-value" id="detFat">-</span></div>
+            <hr style="border:0; border-top:1px solid #eee; margin:10px 0;">
+            <div class="input-group">
+                <label>Category</label>
+                <select id="mealCat">
+                    <option value="Breakfast">🍳 Breakfast</option>
+                    <option value="Lunch">🍛 Lunch</option>
+                    <option value="Dinner">🍽 Dinner</option>
+                    <option value="Snacks">🍪 Snacks</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label>Grams</label>
+                <input type="number" id="foodGrams" placeholder="Enter quantity in grams" required>
+            </div>
+            <button class="btn" id="btnAddMeal">Add Meal</button>
+        </div>
+    </div>
+
+    <div class="bottom-bar">
+        <div class="nav-links">
+            <a href="index.html" class="nav-item"><span>🏠</span>Home</a>
+            <a href="meals.html" class="nav-item"><span>🍲</span>Meals</a>
+            <a href="summary.html" class="nav-item"><span>📊</span>Summary</a>
+            <a href="goals.html" class="nav-item"><span>🎯</span>Goals</a>
+            <a href="progress.html" class="nav-item"><span>📈</span>Progress</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
